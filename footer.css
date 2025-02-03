@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background color */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #333; /* Dark background for navbar */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+h2.logo {
+    color: #fff; /* White text color */
+    margin: 0;
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px; /* Space between menu items */
+}
+
+ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline-block display */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margins */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Gallery Styles */
+.gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    grid-gap: 10px; 
+}
+
+.gallery-grid div {
+    position: relative;
+    width: 100%;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-grid div:hover .overlay {
+    opacity: 1;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul.socials {
+    margin-bottom: 20px;
+}
+
+footer ul.socials li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul.socials li a {
+    color: #fff; /* White icons color */
+    font-size: 24px; /* Larger icons */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul.socials li a:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+footer .footer-links {
+    margin-bottom: 20px;
+}
+
+footer .footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .footer-links li a {
+    color: #fff; /* White link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links li a:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+footer .footer-bottom {
+    font-size: 12px; /* Smaller font size for footer text */
+    margin-top: 10px;
+}
